@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-wrapper {
+            position: fixed;
+            top: 0; /* Kezdetben a lap tetején */
+            width: 100%;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: top 0.3s, background-color 0.3s;
+            z-index: 999;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* A tartalmat eltoljuk 40px-rel lejjebb, hogy a navigációs sáv ne takarja el */
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        /* Home Section styling */
+        #home {
+            background-color: #e74c3c;
+        }
+
+        /* About Section styling */
+        #about {
+            background-color: #3498db;
+        }
+
+        /* Contact Section styling */
+        #contact {
+            background-color: #27ae60;
+        }
+
+        /* Change navbar position on scroll */
+        .scrolled {
+            top: 40px; /* Görgetéskor a navigációs sáv rögzítve marad 40px-rel lejjebb */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="home" class="section">
+        <h2>Home Section</h2>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Section</h2>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Section</h2>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar-wrapper");
+            const scrollY = window.scrollY;
+
+            if (scrollY < 40) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

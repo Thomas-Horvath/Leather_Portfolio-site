@@ -1,0 +1,437 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --second-font: 'Caesar Dressing', sans-serif;
+    --third-font: 'PT Sans', sans-serif;
+    --bg: #f1f1f1;
+    --bg-75: #f1f1f1cc;
+    --footer-bg: #515151aa;
+    --hun-flag: linear-gradient(to bottom, #ff000066 0%, #ff000066 33%, #ffffffaa 33%, #ffffffaa 66%, #00ff0066 66%, #00ff0066 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+section {
+    min-height: 100vh;
+    background-color: var(--bg-75);
+}
+
+.heading {
+    text-align: center;
+    padding-top: 9rem;
+    font-size: 4rem;
+    font-family: var(--second-font);
+    position: relative;
+    z-index: 100;
+}
+
+
+.heading::after {
+    content: "";
+    /* Második pszeudo-elem */
+    width: 300px;
+    height: 80px;
+
+    background: var(--hun-flag);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+
+
+
+.header {
+    position: fixed;
+    top: 45px;
+    width: 100%;
+    align-items: center;
+    transition: top 0.3s, background-color 0.3s;
+    z-index: 999;
+    align-items: center;
+    background-color: var(--bg-75);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.scrolled {
+    top: 0px;
+}
+
+.header-left ul,
+.header-right ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+li a {
+    text-transform: capitalize;
+    display: inline-block;
+    font-family: var(--third-font);
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+li a:hover {
+    transform: scale(1.2);
+    background: var(--hun-flag);
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin: 1rem 2rem;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    width: 6rem
+}
+
+.title {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 2rem;
+    text-align: center;
+    overflow: hidden;
+    width: 315px;
+}
+
+
+.logo h1 {
+    font-family: var(--second-font);
+    font-size: 3.3rem;
+
+}
+
+.logo span {
+    font-family: var(--third-font);
+    font-weight: 500;
+    font-size: 1.4rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+/*  home section */
+.home {
+    min-height: 100vh;
+    background: linear-gradient(var(--bg-75), var(--bg-75)), url(../assist/img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head_section {
+
+    display: flex;
+    justify-content: end;
+    height: 40px;
+    align-items: center;
+    background-color: transparent;
+    color: #000;
+    margin: 0 2rem;
+}
+
+.head-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem;
+    font-family: var(--third-font);
+    font-weight: 600;
+    width: 650px;
+
+}
+
+.icon,
+.icon-soc {
+    font-size: 1.8rem;
+    color: #000;
+    transition: .3s ease;
+
+}
+
+.social-icon {
+    width: 2rem;
+    transition: .3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+
+}
+
+.head-text-content span {
+    margin-left: 1rem;
+}
+
+.head-text-content a:hover,
+.icon-soc:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+}
+
+.head-text-content {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+   
+}
+
+.head-text-content a {
+    color: #000;
+    font-family: var(--third-font);
+    font-size: 1rem;
+    transition: .3s ease;
+}
+
+.home_content {
+    height: 100%;
+    padding: 10rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 2rem;
+    font-family: var(--main-font);
+}
+
+.home-left h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.home-left h3 {
+    font-size: 1.6rem;
+}
+
+.home-left p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    line-height: 1.6rem;
+}
+
+.home-right {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+.home-right img {
+    width: 100%;
+    border: 4px solid #060606;
+    border-radius: 15px;
+    margin: 2rem;
+    max-width: 650px;
+    box-shadow: 5px 5px 10px #00000077;
+
+}
+
+.about {
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galery_container {
+    padding: 5rem;
+  /*   max-width: 1400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.galery_content-box {
+
+    width: 350px;
+    height: 350px;
+    background-color: #e7e4e4;
+    border: 2px solid #2a2a2a;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px #00000077;
+    overflow: hidden;
+
+}
+
+.galery_content-box img {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+}
+
+.lightbox {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.lightbox img {
+    position: relative;
+   /*  width: 800px; */
+    height: 600px;
+    border: 3px solid #2a2a2a;
+    border-radius: 10%;
+}
+
+.close-icon {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #e0dfdf;
+
+}
+
+.about .content {
+    padding: 3rem;
+   
+}
+
+.about .content h1, h2{
+    margin: 2rem 0;
+    font-size: 3rem;
+    font-family: var(--main-font);
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+}
+
+.products_content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+.products_content h3 {
+    display:inline-block;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.products_content p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.products .heading::after {
+    width: 400px;
+}
+footer {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #fff;
+    height: 30vh;
+    background :linear-gradient(var(--footer-bg), var(--footer-bg)), url("../assist/img/zipper-stitching-cowhide-leather-bag-generated-by-ai.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+.footer_rights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.footer_rights a {
+    color: #a3a3a3;
+}
+
+@media screen and (max-width: 1400px) {
+    li a {
+        font-size: 1.4rem;
+    }
+
+    .logo h1 {
+        font-size: 2.8rem;
+
+    }
+
+    .title {
+        margin-left: 1rem;
+        width: 280px;
+    }
+    .header {
+        top: 0;
+        background-color: var(--bg);
+    }
+    .head_section {
+        display: none;
+    }
+}
