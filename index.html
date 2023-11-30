@@ -4,39 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Csaba Roland - Népi Bőrdíszműves</title>
+    <title>Minta béla- Népi Bőrdíszműves</title>
     <link rel="shortcut icon" href="./assist/icons/icons8-leather-64.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/156d16ec42.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
 
     <header class="header">
         <div class="container">
-            <nav class="header-left">
-                <ul>
-                    <li><a href="#">Kezdőlap</a></li>
-                    <li><a href="#about">Rólam</a></li>
-                    <li><a href="#galery">Galéria</a></li>
-                </ul>
-            </nav>
-            <div class="logo">
-                <img src="./assist/img/pngfind.com-tree-of-life-png-377007.png" alt="">
-                <div class="title">
-                    <h1>Csaba Roland</h1>
-                    <span>Népi Bőrdíszműves</span>
+           
+                <nav class="header-left">
+
+                    <a href="#">Kezdőlap</a>
+                    <a href="#about">Rólam</a>
+                    <a href="#galery">Galéria</a>
+
+                </nav>
+                <div class="logo">
+                    <img src="./assist/img/pngfind.com-tree-of-life-png-377007.png" alt="">
+                    <div class="title">
+                        <h1>Minta Béla</h1>
+                        <span>Népi Bőrdíszműves</span>
+                    </div>
                 </div>
+                <nav class="header-right">
+
+                    <a class="first" href="#products">Termékek</a>
+                    <div class="header_products-sublist">
+                        <ul>
+                            <li><a href="./bags.html">Bőrtáslák</a></li>
+                            <li><a href="./belt.html">Öv,Tarsoly, Övtáska</a></li>
+                            <li><a href="./wallets.html">Pénztárca</a></li>
+                        </ul>
+                    </div>
+                    <a href="#industry">Bőrművesség</a>
+                    <a href="#contact">Kapcsolat</a>
+
+                </nav>
+          
+            <div class="header-button">
+              
+                <button type="button" class="open-menu-btn">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
             </div>
-            <nav class="header-right">
-                <ul>
-                    <li><a href="#portfolio">Portfolió</a></li>
-                    <li><a href="#products">Bőrművesség</a></li>
-                    <li><a href="#contact">Kapcsolat</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -52,9 +71,10 @@
                             exemple@gmail.com</span></a></div>
 
 
-                <div class="social-icon"><a href="https://www.facebook.com/roland.csaba.71"><i
+                <div class="social-icon"><a href="https://www.facebook.com" target="_blank"><i
                             class="ri-facebook-circle-fill icon-soc"></i></a></div>
-                <div class="social-icon"><a href="#"><i class="ri-instagram-line icon-soc"></i></a></div>
+                <div class="social-icon"><a href="https://instagram.com" target="_blank"><i
+                            class="ri-instagram-line icon-soc"></i></a></div>
 
 
             </div>
@@ -62,37 +82,42 @@
         <div class="home_content">
             <div class="home-left">
                 <h1>Üdvözöllek</h1>
-                <h3>Engedd meg hogy bemutatkozzam</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio voluptatibus repellat. Deleniti
-                    possimus laborum cum, sequi veniam cupiditate rerum dolorem asperiores amet voluptas corporis
-                    tenetur nostrum dignissimos, quae autem voluptatibus perferendis adipisci eos cumque fugit nisi
-                    molestiae ipsa molestias.</p>
+                <h3>Kézzel készített bőr termékek!</h3>
+                <p>Az összes alkotásomat egyedi elképzelések alapján, kézzel készítem el, a minta megtervezésétől
+                    kezdve, a bőr kiszabásán át, a varrásig. Minden egyes darabra kiemelt figyelmet fordítok, előfordul,
+                    hogy egyszerre csak egyen dolgozom, míg az a legtökéletesebb nem lesz. A magyar minőségi bőrök
+                    mellett egyéb, természetes anyagokat is szívesen használok, például fát, csontot, szarut, nemezt
+                    vagy gyöngyöt, illetve ötvösmunkákkal egészítem ki a darabokat. </p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn home-btn">Egyedi elképzelés</a>
+                    <a href="#products" class="btn home-btn">Termékek</a>
+                </div>
             </div>
             <div class="home-right">
-                <img src="./assist/img/Roland.jpg" alt="">
+                <img src="./assist/img/close-up-engraving-art-tools.jpg" alt="">
             </div>
         </div>
     </section>
     </section>
     <section class="about" id="about">
+
         <div class="heading">Rólam</div>
         <div class="content">
             <h1>Életút</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere nihil quod recusandae voluptatibus, nam
-                quos. Porro fugiat voluptatum vitae. Deleniti laboriosam odit minus quidem quia repellat ullam
-                consequatur porro ad enim harum quasi vitae cupiditate aliquam eaque reprehenderit ut consectetur
-                deserunt, obcaecati nostrum libero qui magni vel aspernatur? Voluptatibus enim ipsum quo officia dolor
-                dolorum dolores doloremque, eligendi nobis quae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odio fugit deserunt vero repellendus minus
-                molestias? Distinctio vero unde magnam ratione blanditiis laborum repudiandae perspiciatis cumque,
-                labore aliquid, asperiores ab accusantium eveniet quam nihil repellendus illum deleniti necessitatibus
-                dolor. Perferendis optio doloremque recusandae rem repellat! Animi non necessitatibus explicabo, sed
-                quasi nesciunt placeat adipisci consequatur. Vel temporibus, deserunt quaerat, cum veniam optio
-                molestiae molestias iure tempore consectetur, ut exercitationem non ratione quibusdam saepe atque! Sit,
-                voluptatum deserunt obcaecati, eum explicabo iure repellendus sed saepe ducimus suscipit odit eos
-                reiciendis labore cum expedita voluptatem tempore sint, unde minima sapiente ea similique accusamus
-                porro itaque. Consectetur, molestiae et unde quo, minima mollitia earum itaque eligendi aliquid impedit
-                odio voluptatum? Sit, debitis repudiandae?</p>
+            <p>Minta Bélánaknak hívnak, 1984-ben születtem Székesfehérváron.
+            <p>Már tízéves koromban megismerkedtem a
+                népi mesterségekkel Pásztor Sarolta bőrműves jóvoltából.
+            <p> Ettől kezdve folyamatosan tökéletesítettem
+                a
+                tudásomat: az általános iskola alatt tűzzománcot és ötvösséget tanultam Korcz Judittól és Fehér
+                Csabától; fafaragást Berta Józseftől és alkalmazott grafikát Bauer Istvántól. Innen egyenes út vezetett
+                a Képző és Iparművészeti Szakközépiskola bőrműves és a dunaújvárosi Lórántffy Zsuzsanna Középiskola
+                bőrdíszműves szakára.</p>
+            <p> Az Országos Szakma Kiváló Tanulója versenyen elért eredményem csak még inkább
+                meggyőzött arról, hogy a bőrművesség az én utam. </p>
+
+            <p>
+
             <h2>Még néhány gondolat</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat quae incidunt nihil earum eum nam
                 nesciunt doloremque ex modi vitae dicta distinctio, magni non voluptate expedita consectetur. Eius,
@@ -119,35 +144,214 @@
             <i class="fa-regular fa-circle-xmark close-icon"></i>
         </div>
     </section>
-    <section class="portfolio" id="portfolio">
-        <div class="heading">Portfólió</div>
+    <div class="side-wrapper">
+        <div class="side">
+
+            <h1>VARÁZSOLJA EGYEDIVÉ MEGJELENÉSÉT EGY KÉZZEL KÉSZÍTETT BŐR KIEGÉSZÍTŐVEL! ÍRJA MEG NEKEM ELKÉPZELÉSÉT ÉS
+                EGYÜTT MEGVALÓSÍTJUK AZT!</h1>
+            <a href="#contact" class="btn">Szeretnék ajánlatot kérni</a>
+        </div>
+    </div>
+
+
+
+    <section class="products" id="products">
+        <div class="heading">Termékek</div>
+        <div class="product_container">
+            <div class="product_content-box">
+                <h3>Tervezzük meg közösen álmaid táskáját!</h3>
+                <h1>BőrTáskák</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, pariatur vitae. Eum perspiciatis
+                    delectus, ad ipsa amet voluptatum tenetur exercitationem illum? Ad nostrum magni laudantium eos
+                    magnam voluptate corporis dignissimos?</p>
+                <div class="product-list">
+                    <ul>
+                        <li><a href="">Női Táskák</a></li>
+                        <li><a href="">Férfi Táskák</a></li>
+                        <li><a href="">Hátizsákok</a></li>
+                        <li><a href="">Motoros</a></li>
+                    </ul>
+                </div>
+                <a class="btn product-btn" href="./bags.html">Tudj meg többet</a>
+            </div>
+            <div class="product_content-box">
+                <h3>Tervezzük meg közösen álmaid bőr övét!</h3>
+                <h1>Öv, Tarsoly, Övtáska</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, pariatur vitae. Eum perspiciatis
+                    delectus, ad ipsa amet voluptatum tenetur exercitationem illum? Ad nostrum magni laudantium eos
+                    magnam voluptate corporis dignissimos?</p>
+                <div class="product-list">
+                    <ul>
+                        <li><a href="">Női Övtáskák</a></li>
+                        <li><a href="">Férfi Övtáskák</a></li>
+                        <li><a href="">Övtarsolyok</a></li>
+                        <li><a href="">Övek</a></li>
+                    </ul>
+                </div>
+                <a class="btn product-btn" href="./belt.html">Tudj meg többet</a>
+            </div>
+            <div class="product_content-box">
+                <h3>Tervezzük meg közösen álmaid pénztárcáját!</h3>
+                <h1>Bőr Pénztárcák</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, pariatur vitae. Eum perspiciatis
+                    delectus, ad ipsa amet voluptatum tenetur exercitationem illum? Ad nostrum magni laudantium eos
+                    magnam voluptate corporis dignissimos?</p>
+                <div class="product-list">
+                    <ul>
+                        <li><a href="">Női</a></li>
+                        <li><a href="">Férfi</a></li>
+
+                </div>
+                <a class="btn product-btn" href="./wallets.html">Tudj meg többet</a>
+            </div>
+        </div>
 
     </section>
-    <section class="products" id="products">
+    <section class="industry" id="industry">
         <div class="heading">Bőrművesség</div>
-        <div class="products_content">
+        <div class="industry_content">
             <h3>A BŐRMŰVESSÉG A LEGŐSIBB SZAKMÁK EGYIKE.</h3>
-            <p>Az emberiség történelmében kezdettől fogva tetten érhető a bőr megmunkálása, hiszen elődeink az elejtett állatok minden részét –így a bőrét is – hasznosították. Az anyag remek tulajdonságaiból adódóan szinte nélkülözhetetlenné vált különböző használati tárgyak készítéséhez.
-
-                A tartós, jól formálható, könnyen igényekhez alakítható bőr kiállta az idők próbáját. A mesterek változó korokhoz igazodva a mindennapi élethez szükséges tárgyakat- öltözetet, lábbelit, tároló tömlőt, bőr tarsolyt, lószerszámot, és más bőrből készült termékeket – készítettek belőlük.
-                
-                Ahogy az idő előrehaladtával a minket körülvevő bőrtárgyak, úgy maga a szakma is változásokon esett át. Míg régebben a bőr kikészítésétől, tartósításától, cserzésétől elkezdve minden folyamatot maguk a bőrműves mesterek végeztek, idővel ezek önálló szakmákká, mesterségekké alakultak. Eleinte kis tímár-cserző céh műhelyekben állították elő a megnövekedett igények kiszolgálására az alapanyagot. Ezt követően indulhatott meg a nagyüzemi bőrgyártás. A paletta szélesedésével elváltak egymástól a bőrrel foglalkozó, de egy-egy speciális terméket készítő szakmák is. Ilyen volt a csizmadia, szíjjártó, lószerszámkészítő, nyerges vagy a bőrtárgy készítő.
-                
-                Ahogy maga a bőrművesség a népi kultúrák szerves részévé vált, ugyanúgy merített is azokból. Az elkészített használati tárgyakat a népi motívumkincset felhasználva gazdagon díszítik, amelyek ez által funkciójukon túl üzenetet is hordoznak.
-                
-                A motívumoknak, jelképrendszereknek mondanivalójuk van, mely árulkodik viselője hitéről, hovatartozásáról, személyiségéről. Leginkább a saját maguk által kiválasztott, vagy az alkotóval közös tervezés után megszülető tárgyak adnak hiteles információt használójukról.
-                
-                A bőrműves kézi munkát alkalmazva, valódi bőr alapanyag felhasználásával állítja elő egyedi alkotásait, egyéb természetes anyagokkal kiegészítve. Ebből adódóan az alkotás folyamata rendkívül időigényes – különösen az egyedi, kis szériában előállítható termékek esetén-, ami tükröződik az eladási árban is. A népi motívumok feldolgozásával nem a legfrissebb divatirányzatot követi, de a mai kor igényeit szem előtt tartva készíti alkotásait.
-                </p>
+            <p>Az emberiség történelmében kezdettől fogva tetten érhető a bőr megmunkálása, hiszen elődeink az elejtett
+                állatok minden részét –így a bőrét is – hasznosították. Az anyag remek tulajdonságaiból adódóan szinte
+                nélkülözhetetlenné vált különböző használati tárgyak készítéséhez.
+            <p>
+                A tartós, jól formálható, könnyen igényekhez alakítható bőr kiállta az idők próbáját. A mesterek változó
+                korokhoz igazodva a mindennapi élethez szükséges tárgyakat- öltözetet, lábbelit, tároló tömlőt, bőr
+                tarsolyt, lószerszámot, és más bőrből készült termékeket – készítettek belőlük.</p>
+            <p>
+                Ahogy az idő előrehaladtával a minket körülvevő bőrtárgyak, úgy maga a szakma is változásokon esett át.
+                Míg régebben a bőr kikészítésétől, tartósításától, cserzésétől elkezdve minden folyamatot maguk a
+                bőrműves mesterek végeztek, idővel ezek önálló szakmákká, mesterségekké alakultak. Eleinte kis
+                tímár-cserző céh műhelyekben állították elő a megnövekedett igények kiszolgálására az alapanyagot. Ezt
+                követően indulhatott meg a nagyüzemi bőrgyártás. A paletta szélesedésével elváltak egymástól a bőrrel
+                foglalkozó, de egy-egy speciális terméket készítő szakmák is. Ilyen volt a csizmadia, szíjjártó,
+                lószerszámkészítő, nyerges vagy a bőrtárgy készítő.</p>
+            <p>
+                Ahogy maga a bőrművesség a népi kultúrák szerves részévé vált, ugyanúgy merített is azokból. Az
+                elkészített használati tárgyakat a népi motívumkincset felhasználva gazdagon díszítik, amelyek ez által
+                funkciójukon túl üzenetet is hordoznak.</p>
+            <p>
+                A motívumoknak, jelképrendszereknek mondanivalójuk van, mely árulkodik viselője hitéről,
+                hovatartozásáról, személyiségéről. Leginkább a saját maguk által kiválasztott vagy az alkotóval közös
+                tervezés után megszülető tárgyak adnak hiteles információt használójukról.</p>
+            <p>
+                A bőrműves kézi munkát alkalmazva, valódi bőr alapanyag felhasználásával állítja elő egyedi alkotásait,
+                egyéb természetes anyagokkal kiegészítve. Ebből adódóan az alkotás folyamata rendkívül időigényes –
+                különösen az egyedi, kis szériában előállítható termékek esetén-, ami tükröződik az eladási árban is. A
+                népi motívumok feldolgozásával nem a legfrissebb divatirányzatot követi, de a mai kor igényeit szem
+                előtt tartva készíti alkotásait.</p>
+            </p>
         </div>
     </section>
     <section class="contact" id="contact">
         <div class="heading">kapcsolat</div>
+        <div class="contact-content">
+            <div class="contact-left">
+                <div class="group-title">
+                    <h1>Irjon üzenetet!</h1>
+                    <h2>Minta béla</h2>
+                    <span>Népi Bőrdíszműves</span>
+                    <p>Ha szeretne kitűnni a tömegből egy egyedi, kézzel készített, minőségi bőrtáskával vagy ékszerrel,
+                        amellyel egyszerre ápolhatja a tradíciókat és lehet divatos, keressen meg most! Mondja el, mit
+                        szeretne, és én megvalósítom. Küldjön nekem üzenetet az alábbi űrlap kitöltésével, és amint
+                        tehetem, írok Önnek, hogy megbeszélhessük a részleteket. Ha pedig még nem tudja pontosan, milyen
+                        terméket rendelne, tekintse meg kész munkáimat, és merítsen ihletet! Elég egy apró ötlet, egy
+                        irány, hogy új bőr kiegészítőjét akár együtt álmodhassuk meg.
+                        <br><br>
+                        Írjon vagy hívjon bizalommal!
+                    </p>
+                </div>
+                <div class="group-cont">
+                    <div class="group">
+                        <i class="ri-mail-fill contact__icon"></i>
+                        <div class="text">
+                            <h1>Email</h1>
+                            <a href="mailto:#"><span>
+                                    exemple@gmail.com</span></a>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <i class="ri-phone-fill contact__icon"></i>
+                        <div class="text">
+                            <h1>Telefon</h1>
+                            <a href="tel"><span> +36/50 123 -
+                                    4567</span> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-right">
+                <form class="form" id="contact-form">
+                    <div class="form__container">
+                        <div class="form__content">
+                            <div class="form__group">
+                                <label for="name" class="form__label">név<sup>*</sup></label>
+                                <input type="text" name="user-name" id="name" class="input-primary form__input"
+                                    autocomplete="off" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label ">email<sup>*</sup></label>
+                                <input type="email" name="user-email" id="email" class="input-primary form__input"
+                                    autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" class="form__label ">tárgy</label>
+                            <input type="text" name="subject" id="subject" class="input-primary form__input"
+                                autocomplete="off">
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label ">üzenet<sup>*</sup></label>
+                            <textarea type="text" name="message" id="message" class="input-primary form__input"
+                                autocomplete="off" required></textarea>
+                        </div>
+                        <div class="form__status-box">
+                            <p></p>
+                        </div>
+                        <div class="wrapper">
+                            <button type="submit" name="submit" class="btn">Küldés
+                                <i class="ri-send-plane-fill"></i></button>
+                            <p class="requerd"><sup>*</sup> = Kötelező kitölteni!</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
     <footer>
-        <div class="footer_rights">&copy; 2023 Minden jog fenntartva!<br><span>Design <a
-                    href="https://thomashorvath.hu">Thomas Horvath</a></span></div>
+        <div class="footer_content">
+            <div class="footer-group">
+                <div class="footer-left">
+
+                    <a href="#">Kezdőlap</a>
+                    <a href="#about">Rólam</a>
+                    <a href="#galery">Galéria</a>
+                    <a class="first" href="#products">Termékek</a>
+                    <a href="#industry">Bőrművesség</a>
+                    <a href="#contact">Kapcsolat</a>
+
+
+                </div>
+                <div class="footer-right">
+
+                    <a href="https://facebook.com" target="_blank"><img src="./assist/icons/icons8-facebook-48.png"
+                            alt=""></a>
+                    <a href="https://instagram.com" target="_blank"><img src="./assist/icons/icons8-instagram-48.png"
+                            alt=""></a>
+                    <a href="https://twitter.com" target="_blank"><img
+                            src="./assist/icons/icons8-twitter-circled-48.png" alt=""></a>
+
+
+
+                </div>
+            </div>
+            <div class="footer_bottom">&copy; 2023 Minden jog fenntartva!<br><span>Design <a
+                        href="https://thomashorvath.hu">Thomas Horvath</a></span></div>
+            <button type="button" class="btn btn-primary scroll-up  "><i class="ri-arrow-up-line"></i></button>
     </footer>
+
     <script src="./js/app.js"></script>
 </body>
 
