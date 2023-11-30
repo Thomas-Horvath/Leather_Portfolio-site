@@ -1204,16 +1204,19 @@ footer {
 @media screen and (max-width: 400px) {
     .home_content {
         flex-direction: column-reverse;
+        width: 100%;
         padding: 7rem 0 0 0;
     }
 
     .home-right,
     .home-left {
         width: 100%;
+        justify-content: center;
     }
 
     .home-right img {
         margin: .5rem;
+        width: 90%;
     }
 
     .home-left {
