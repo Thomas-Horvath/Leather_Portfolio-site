@@ -4,6 +4,7 @@ window.addEventListener("scroll", function () {
 
     if (scrollY > 80) {
         navbar.classList.add("scrolled");
+       
     } else {
         navbar.classList.remove("scrolled");
     }
