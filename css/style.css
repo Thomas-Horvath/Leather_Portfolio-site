@@ -63,6 +63,9 @@ body {
 
 .btn:active {
     transform: scale(0.9);
+    color: var(--red);
+    background-color: var(--bg);
+    border: 3px solid var(--red);
 }
 
 .btn:hover {
@@ -1289,6 +1292,9 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+    footer {
+        height: auto;
+    }
 
 
 
@@ -1329,10 +1335,7 @@ footer {
         justify-content: center;
     }
 
-    footer {
-        height: auto;
-    }
-
+   
 
 
     .industry_content {
