@@ -15,6 +15,12 @@
 
     }
 
+    .header-left a,
+    .header-right a {
+        font-size: 1.2rem;
+    }
+
+
     .head_section {
         display: none;
     }
@@ -110,18 +116,19 @@
     .product_content-box {
         width: 280px;
     }
-}
 
-.header-left a, .header-right a {
-    font-size: 1.1rem;
-}
 
+    .header-left a,
+    .header-right a {
+        font-size: 1.1rem;
+    }
+}
 
 
 @media screen and (max-width: 998px) {
-html {
-    scroll-behavior: auto;
-}
+    html {
+        scroll-behavior: auto;
+    }
 
     /* OPEN HAMBURGER MENU  */
 
@@ -184,9 +191,10 @@ html {
         opacity: 1;
 
     }
-.header_products-sublist ul {
-    padding: 1rem 0;
-}
+
+    .header_products-sublist ul {
+        padding: 1rem 0;
+    }
 
     .firstLinkWrapper {
         display: inline-block;
@@ -227,7 +235,7 @@ html {
     }
 
     .header-left {
-        padding:1rem 0 0 0 ;
+        padding: 1rem 0 0 0;
     }
 
     .header-right {
@@ -242,11 +250,12 @@ html {
         align-items: center;
         gap: 0;
         width: 80%;
-        font-family:var(--libre-font);
+        font-family: var(--libre-font);
     }
-    .header-left a ,
+
+    .header-left a,
     .header-right a {
-font-size: 1.4rem;
+        font-size: 1.4rem;
     }
 
     .header-button {
