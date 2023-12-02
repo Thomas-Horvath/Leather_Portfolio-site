@@ -80,7 +80,7 @@ formInputs.forEach(input => {
 });
 
 /* ============== Send Email By EmailJS ============== */
-const serviceID = "service_t8";
+const serviceID = "service_t8b2h45";
 const templateID = "template_aa4hy22";
 const templateParams = contactForm;
 const publicKey = "83VPhLv_IQqpQzH-0";
@@ -102,6 +102,10 @@ function sendEmail(e) {
         (error) => {
             console.log(error);
             statusBox.textContent = "Az üzenetet nem sikerült elküldeni! ❌"
+            setTimeout(() => {
+                statusBox.textContent = ""
+            }, 3000);
+            contactForm.reset();
         }
     );
 }

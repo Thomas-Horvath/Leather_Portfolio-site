@@ -68,12 +68,11 @@ section {
     height: 50px;
 }
 
-.btn:active {
+.btn:active , .btn-scroll:active {
     transform: scale(0.9);
-    color: var(--red);
-    background-color: var(--bg);
-    border: 3px solid var(--red);
+
 }
+
 
 .btn:hover {
     color: var(--red);
@@ -249,18 +248,20 @@ section {
 
 
 
-
+.firstLinkWrapper {
+    position: relative;
+}
 
 /* submenu */
 .firstLinkWrapper:hover+.header_products-sublist {
     visibility: visible;
     opacity: 1;
-    
+
 }
 
 .header_products-sublist:hover {
-   visibility: visible;
-   opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .header_products-sublist {
@@ -269,14 +270,14 @@ section {
     opacity: 0;
     position: absolute;
     padding: 1rem;
-    top: 45px;
-    left: -10px;
+    top: 50px;
+    left: 0;
     border: 2px solid var(--red);
     background-color: var(--box-bg);
     flex-direction: column;
     width: 150px;
     height: auto;
-   
+
 
 }
 
@@ -840,7 +841,7 @@ section {
 }
 
 .industry .heading::after {
-    width: 400px;
+    width: 398px;
 }
 
 
@@ -886,6 +887,9 @@ section {
     margin: 1.7rem 0;
 }
 
+#c-text {
+    display: none;
+}
 
 .contact-right {
     padding: 2rem;
@@ -1086,7 +1090,23 @@ footer {
 .footer_bottom a {
     color: #a3a3a3;
 }
-
+.btn-scroll {
+    display: flex;
+    align-items: center;
+    color: var(--bg); 
+    border: none;
+    border-radius: 8px;
+    background-color: var(--red);
+    font-family: var(--libre-font);
+    font-weight: 700;
+    font-size: 1.7rem;
+    transition: .2s ease;
+    width: fit-content;
+    cursor: pointer;
+    user-select: none;
+    border: 3px solid var(--red);
+   
+}
 .scroll-up {
     position: fixed;
     bottom: 30px;
@@ -1094,16 +1114,10 @@ footer {
     width: 3rem;
     height: 3rem;
     padding: 1rem;
-    font-size: var(--font-size-1-5);
-    box-shadow: 0 3px 5px var(--black-100-alpha-20);
     opacity: 0;
     background-color: var(--bg);
     border: 3px solid var(--red);
-    transition: all var(--default-duration) ease;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 .scroll-up i {
