@@ -148,7 +148,7 @@ const menuLinks = document.querySelectorAll(".menu-link"); /*minden linknek van 
 [openMenuBtn, closeMenuBtn].forEach((btn) => {
     btn.addEventListener("click", () => {
         menu.classList.toggle("open"); /* ez hozzáadja aklasszt */
-        menu.style.transition = "transform 0.5s ease"; /* ez az átmenetettempóját szabájozza */
+        menu.style.transition = "transform .25s ease"; /* ez az átmenetettempóját szabájozza */
     });
 });
 

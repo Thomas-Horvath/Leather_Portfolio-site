@@ -1,51 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minta Béla - Népi Bőrdíszműves</title>
+    <title>Csaba Roland- Népi Bőrdíszműves</title>
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./assist/icons/icons8-leather-64.png" type="image/x-icon">
+
+    <!--  MAIN STELZSJHEET -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- MEDIA QUERYS -->
+    <link rel="stylesheet" href="./css/media-query.css">
+
+    <!--  REMIX ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- FONT-AWESOME ICON -->
     <script src="https://kit.fontawesome.com/156d16ec42.js" crossorigin="anonymous"></script>
+
+    <!-- EMAILJS - for email sending -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
-
-    <header class="sub_header">
+    <!--  ======== NAVBAR SECTION ========== -->
+    <header class="navbar sub_navbar">
         <div class="container">
+            <button type="button" class="close-menu-btn"></button>
             <nav class="header-left">
-
-                <a href="./index.html">Kezdőlap</a>
-                <a href="./index.html#about">Rólam</a>
-                <a href="./index.html#galery">Galéria</a>
-
+                <a class="menu-link" href="./index.html">Kezdőlap</a>
+                <a class="menu-link" href="./index.html#about">Rólam</a>
+                <a class="menu-link" href="./index.html#galery">Galéria</a>
             </nav>
+
             <div class="logo">
                 <img src="./assist/img/pngfind.com-tree-of-life-png-377007.png" alt="">
                 <div class="title">
-                    <h1>Minta Béla</h1>
+                    <h1>Csaba Roland</h1>
                     <span>Népi Bőrdíszműves</span>
                 </div>
             </div>
-            <nav class="header-right">
 
-                <a class="first" href="./index.html#products">Termékek</a>
+            <nav class="header-right">
+                <a class="first menu-link" href="./index.html#products">Termékek</a>
                 <div class="header_products-sublist">
                     <ul>
-                        <li><a href="./bags.html">Bőrtáskák</a></li>
+                        <li><a href="./bags.html">Bőrtáslák</a></li>
                         <li><a href="./belt.html">Öv,Tarsoly, Övtáska</a></li>
                         <li><a href="./wallets.html">Pénztárca</a></li>
                     </ul>
                 </div>
-                <a href="./index.html#industry">Bőrművesség</a>
-                <a href="./index.html#contact">Kapcsolat</a>
-              
+                <a class="menu-link" href="./index.html#industry">Bőrművesség</a>
+                <a class="menu-link" href="./index.html#contact">Kapcsolat</a>
+                
             </nav>
+
+        </div>
+        <!-- HAMBURGER MENU HEADER -->
+        <div class="header-button">
+            <div class="logo2">
+                <img src="./assist/img/pngfind.com-tree-of-life-png-377007.png" alt="">
+                <div class="title">
+                    <h1>Csaba Roland</h1>
+                    <span>Népi Bőrdíszműves</span>
+                </div>
+            </div>
+            <!-- HAMBURGER ICON -->
+            <button type="button" class="open-menu-btn">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
         </div>
     </header>
+
 
 
 

@@ -104,11 +104,6 @@
         font-size: 1rem;
     }
 
-    .header_products-sublist {
-        width: 120px;
-        left: 0;
-    }
-
 }
 
 @media screen and (max-width: 1190px) {
@@ -116,6 +111,10 @@
         width: 280px;
     }
 }
+
+
+
+
 
 @media screen and (max-width: 998px) {
 
@@ -134,40 +133,85 @@
         display: none;
     }
 
+    .navbar {
+        transition: 3s ease;
+    }
 
     .container {
         position: fixed;
         right: 0;
         top: 0;
         width: 100%;
-       
+
         background-color: var(--red);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        overflow-y: auto;
+        /*  overflow-y: auto; */
         z-index: 1;
+
         transform: translate(100%) rotate(-180deg);
         padding-top: 50px;
     }
 
     .menu-link {
         border-bottom: 1px solid var(--bg-75);
-        width: 200%;
+        width: 100%;
         text-align: center;
         border-radius: 0px !important;
+        padding-top: 20px;
+    }
+
+
+
+
+
+    /*  sublist display */
+    .header_products-sublist {
+
+        display: block;
+        position: static;
+        background-color: transparent;
+        padding: 1rem 0;
+        width: 100%;
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+
+    }
+.header_products-sublist ul {
+    padding: 1rem 0;
+}
+
+    .firstLinkWrapper {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+
+
+    .header_products-sublist li {
+        border-bottom: 1px solid var(--bg-75);
+        width: 70%;
 
     }
 
-    .first:hover+.header_products-sublist {
-        display: none;
+    .header_products-sublist li a {
+        color: var(--bg-75);
+        font-size: 1.4rem;
+        font-weight: 600;
     }
+
 
 
     .header-left a:hover,
     .header-right a:hover {
-        transform: scale(1);
+        transform: none;
     }
 
     .open {
@@ -178,16 +222,26 @@
         display: none;
     }
 
+    .header-left {
+        padding-bottom: 0;
+    }
+
+    .header-right {
+        padding-top: 0;
+    }
+
     .header-left,
     .header-right {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        gap: 0;
+        width: 80%;
     }
 
     .header-button {
         display: flex;
+
     }
 
 
