@@ -140,7 +140,7 @@
         right: 0;
         top: 0;
         width: 100%;
-        height: 50%;
+       
         background-color: var(--red);
         display: flex;
         flex-direction: column;
@@ -336,12 +336,14 @@
     .product_content-box {
         width: 330px;
     }
-.group-cont {
-    flex-wrap: wrap;
-}
-.group-title p {
-    font-size: 1rem;
-}
+
+    .group-cont {
+        flex-wrap: wrap;
+    }
+
+    .group-title p {
+        font-size: 1rem;
+    }
 
 
     /*  FOOTER */

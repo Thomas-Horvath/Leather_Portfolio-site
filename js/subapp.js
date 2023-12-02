@@ -35,3 +35,30 @@ function createImageElements() {
 }
 
 createImageElements();
+
+/* -------- */
+const menu = document.querySelector(".container");
+const openMenuBtn = document.querySelector(".open-menu-btn");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
+const menuLinks = document.querySelectorAll(".menu-link"); /*minden linknek van egy ilyen osztélya */
+
+[openMenuBtn, closeMenuBtn].forEach((btn) => {
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("open"); /* ez hozzáadja aklasszt */
+        menu.style.transition = "transform 0.5s ease"; /* ez az átmenetettempóját szabájozza */
+    });
+});
+
+/* a memu-link osztályú elemeken végig megyünk és valamelyiknél van egy klikk esemény akkor amenuről levesszük a open klasszt.
+így ha amneüre kattintunk akkor összecsukódik a hamburger menü */
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("open"); // Az összecsukás a linkre kattintáskor történik
+    });
+});
+
+/* ezzel a transition átmenet végeztével mindig leveszi a style tulajdonságot.
+ez azért kell hogy ha keskenyítem az oldalt a töréspontnál(991px) ne ugráljun a menü!! */
+menu.addEventListener("transitionend", function () {
+    this.removeAttribute("style");
+});
