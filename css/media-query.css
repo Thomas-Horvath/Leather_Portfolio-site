@@ -537,12 +537,21 @@
     .contact-right {
         flex-direction: column;
     }
-
+    .group-title h1 {
+        display: none;
+    }
     #c-text {
         display: block;
         font-family: var(--libre-font);
         font-size: 2rem;
         margin-bottom: 2rem;
+    }
+    .group-title h2 {
+        margin-top: 0;
+    }
+
+    .contact-left {
+        padding-top: 0;
     }
 
 }
@@ -656,17 +665,9 @@
 
     }
 
-    .group-title h1 {
-        display: none;
-    }
+  
 
-    .group-title h2 {
-        margin-top: 0;
-    }
-
-    .contact-left {
-        padding-top: 0;
-    }
+    
 
     .group {
         justify-content: start;
