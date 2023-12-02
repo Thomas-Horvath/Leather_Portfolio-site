@@ -11,7 +11,7 @@
     }
 
     .navbar {
-        top: 0;
+        top: 0;h3
 
     }
 
@@ -61,7 +61,7 @@
     }
 
     .home h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .home h3 {
@@ -101,7 +101,7 @@
     }
 
     .title span {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
 }
@@ -112,12 +112,16 @@
     }
 }
 
-
+.header-left a, .header-right a {
+    font-size: 1.1rem;
+}
 
 
 
 @media screen and (max-width: 998px) {
-
+html {
+    scroll-behavior: auto;
+}
 
     /* OPEN HAMBURGER MENU  */
 
@@ -196,13 +200,13 @@
 
 
     .header_products-sublist li {
-        border-bottom: 1px solid var(--bg-75);
+        border-bottom: 1px solid var(--text-gold);
         width: 70%;
 
     }
 
     .header_products-sublist li a {
-        color: var(--bg-75);
+        color: var(--text-gold);
         font-size: 1.4rem;
         font-weight: 600;
     }
@@ -223,12 +227,13 @@
     }
 
     .header-left {
-        padding-bottom: 0;
+        padding:1rem 0 0 0 ;
     }
 
     .header-right {
-        padding-top: 0;
+        padding: 0 0 4rem 0;
     }
+
 
     .header-left,
     .header-right {
@@ -237,6 +242,11 @@
         align-items: center;
         gap: 0;
         width: 80%;
+        font-family:var(--libre-font);
+    }
+    .header-left a ,
+    .header-right a {
+font-size: 1.4rem;
     }
 
     .header-button {

@@ -2,6 +2,7 @@
     --main-font: 'Roboto', sans-serif;
     --second-font: 'Caesar Dressing', sans-serif;
     --third-font: 'PT Sans', sans-serif;
+    --libre-font: 'Libre Baskerville', sans-serif;
     --bg: #f1f1f1;
     --bg-darker: #a5a5a5;
     --bg-75: #f1f1f1cc;
@@ -56,7 +57,7 @@ section {
     border: none;
     border-radius: 8px;
     background-color: var(--red);
-    font-family: var(--third-font);
+    font-family: var(--libre-font);
     font-weight: 700;
     font-size: 1.7rem;
     transition: .2s ease;
@@ -149,17 +150,7 @@ section {
 }
 
 .sub_navbar {
-    /*  position: fixed; */
     top: 0px;
-    /*    width: 100%;
-    align-items: center;
-    transition: top 0.3s, background-color 0.3s;
-    z-index: 999;
-    align-items: center;
-    background-color: var(--red);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    color: #fff; */
-
 }
 
 .container {
@@ -197,9 +188,9 @@ section {
 .header-right a {
     text-transform: capitalize;
     display: inline-block;
-    font-family: var(--third-font);
+    font-family: var(--libre-font);
     color: var(--bg-75);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     transition: .3s ease;
 
@@ -285,7 +276,7 @@ section {
     flex-direction: column;
     width: 150px;
     height: auto;
-    /* transition: visibility 0s, opacity 0.5s; */
+   
 
 }
 
@@ -345,7 +336,7 @@ section {
 }
 
 .logo span {
-    font-family: var(--third-font);
+    font-family: var(--libre-font);
     font-weight: 500;
     font-size: 1.2rem;
 
@@ -455,7 +446,7 @@ section {
     justify-content: center;
     width: 50%;
     margin: 2rem;
-    font-family: var(--main-font);
+    font-family: var(--libre-font);
 }
 
 .btn-group {
@@ -485,8 +476,8 @@ section {
 }
 
 .home-left h3 {
-    font-size: 2rem;
-    font-family: var(--third-font);
+    font-size: 1.8rem;
+    font-family: var(--libre-font);
 }
 
 .home-left p {
@@ -508,11 +499,11 @@ section {
     width: 100%;
 
 
-    border: 6px solid #000000cd;
-    border-radius: 15px;
+    border: 4px solid #000000cd;
+    border-radius: 5px;
     margin: 2rem;
     max-width: 700px;
-    box-shadow: 10px 10px 20px #000000bb;
+    box-shadow: 10px 10px 25px #000000dd;
 
 }
 
@@ -599,7 +590,7 @@ section {
     height: 350px;
     background-color: #e7e4e4;
     border: 2px solid #2a2a2a;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 5px 5px 10px #00000077;
     overflow: hidden;
     position: relative;
