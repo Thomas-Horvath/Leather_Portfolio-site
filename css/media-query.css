@@ -1,0 +1,566 @@
+@media screen and (max-width: 1400px) {
+
+
+
+
+
+
+    .title {
+        margin-left: 1rem;
+        width: 280px;
+    }
+
+    .navbar {
+        top: 0;
+
+    }
+
+    .head_section {
+        display: none;
+    }
+
+    .product_content-box {
+        width: 350px;
+    }
+
+    .form__container {
+        align-items: end;
+    }
+
+    .form__content {
+        align-items: end;
+        justify-content: end;
+    }
+
+    .form__group {
+        width: 100%;
+
+    }
+
+    .contact-content {
+        align-items: start;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .home_content {
+        padding: 6rem 0 3rem 0;
+    }
+
+    .home-left {
+        width: 40%;
+    }
+
+    .home-right {
+        width: 60%;
+    }
+
+    .home-right img {
+        margin: 0;
+    }
+
+    .home h1 {
+        font-size: 4rem;
+    }
+
+    .home h3 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1.2rem;
+    }
+
+    .home-btn {
+        font-size: 1rem;
+    }
+
+
+
+    .footer-left {
+        margin-left: 1rem;
+    }
+
+    .footer-right {
+        margin-right: 1rem;
+    }
+
+    .navbar .logo {
+
+        margin: .5rem;
+    }
+
+    .title {
+        width: auto;
+        margin-left: 0.5rem;
+    }
+
+    .title h1 {
+        font-size: 1.4rem;
+    }
+
+    .title span {
+        font-size: 1rem;
+    }
+
+    .header_products-sublist {
+        width: 120px;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 1190px) {
+    .product_content-box {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+
+
+    /* OPEN HAMBURGER MENU  */
+
+    /* CLOSE BUTTON */
+    .close-menu-btn {
+        display: inline-flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hamburgerMenuOpen {
+        display: none;
+    }
+
+
+    .container {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 50%;
+        background-color: var(--red);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        z-index: 1;
+        transform: translate(100%) rotate(-180deg);
+        padding-top: 50px;
+    }
+
+    .menu-link {
+        border-bottom: 1px solid var(--bg-75);
+        width: 200%;
+        text-align: center;
+        border-radius: 0px !important;
+
+    }
+
+    .first:hover+.header_products-sublist {
+        display: none;
+    }
+
+
+    .header-left a:hover,
+    .header-right a:hover {
+        transform: scale(1);
+    }
+
+    .open {
+        transform: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-left,
+    .header-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    .header-button {
+        display: flex;
+    }
+
+
+
+
+    /*  CLOSED HAMBURGER MENU - HEADER*/
+    .navbar .header-button {
+        display: flex;
+        margin: 0 2rem;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    .navbar .logo2 {
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .home_content {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        padding: 7rem 0 0 0;
+    }
+
+    .home-right,
+    .home-left {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .home-right img {
+        margin: .5rem;
+        width: 90%;
+        max-width: 80%;
+    }
+
+    .navbar .logo2 .title {
+        width: auto;
+    }
+
+    .navbar .logo2 img {
+        width: 4rem;
+    }
+
+    .navbar .logo2 span {
+        font-size: 1.2rem;
+    }
+
+    .navbar .logo2 .title h1 {
+        font-family: var(--second-font);
+        font-size: 1.8rem;
+    }
+
+
+
+    /* HAMBURGER MENU ICON */
+    .header-button .open-menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 44px;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        transition: .5s ease;
+
+    }
+
+    .header-button .open-menu-btn:hover {
+        transform: scale(1.2);
+    }
+
+
+    .header-button .open-menu-btn .line {
+        height: 2px;
+        width: 30px;
+        background-color: #fff;
+        position: absolute;
+    }
+
+
+    .header-button .open-menu-btn .line-1 {
+        transform: translateY(-8px);
+    }
+
+    .header-button .open-menu-btn .line-3 {
+        transform: translateY(8px);
+    }
+
+
+
+
+
+
+
+
+
+    /* HOME */
+    .home_content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-left,
+    .home-right {
+        width: 100%;
+    }
+
+    .home-right {
+        justify-content: center;
+    }
+
+    .home-left {
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+    /*  GALERY */
+    .galery_container {
+        padding: 5rem 1rem;
+    }
+
+
+
+
+    /*  PRODUCT */
+    .product_content-box {
+        width: 330px;
+    }
+.group-cont {
+    flex-wrap: wrap;
+}
+.group-title p {
+    font-size: 1rem;
+}
+
+
+    /*  FOOTER */
+    .footer-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        height: auto;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 780px) {
+    .product_container {
+        padding: 5rem 2rem;
+    }
+
+    .group-cont {
+        flex-wrap: wrap;
+    }
+
+    .side h1 {
+        width: 100%;
+    }
+
+    .product_content-box {
+        width: 90%;
+
+    }
+
+    .footer-group {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-left {
+        flex-direction: column;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+
+    .industry_content {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .industry .heading::after {
+        width: 100%;
+    }
+
+    .galery_content-box {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:698px) {
+    .product_content-box {
+        width: 100%;
+    }
+
+    .galery_content-box {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width:610px) {
+    .lightbox img {
+
+        height: 300px;
+        width: 300px;
+    }
+
+    .navbar .header-button {
+        margin: 0;
+    }
+
+    .open-menu-btn {
+        margin-right: .5rem;
+    }
+
+    .navbar .logo2 img {
+        width: 3.5rem;
+    }
+
+    .navbar .logo2 .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar .logo2 .title span {
+        font-size: 1rem;
+    }
+
+    .contact-content {
+        flex-direction: column-reverse;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .wrapper {
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .heading {
+        font-size: 3rem;
+        padding-top: 6rem;
+    }
+
+    .heading::after {
+        height: 60px;
+    }
+
+    .navbar {
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .home-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home-right img {
+        max-width: 100%;
+    }
+
+    .home_content {
+        padding-top: 5rem;
+    }
+
+
+
+    .home-left {
+        padding: 0 2rem;
+        text-align: center;
+        margin-top: 0;
+
+    }
+
+    .btn-group {
+        justify-content: space-between;
+    }
+
+    .home-btn {
+        width: 45%;
+        padding: 1.5rem;
+    }
+
+    .about .content {
+        padding: 1rem 2rem;
+        text-align: justify;
+    }
+
+    .about .content h1 {
+        margin: 1rem 0 0 0;
+    }
+
+    .side h1 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .side .btn {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .galery_content-box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .product_container {
+        padding: 5rem 1rem;
+    }
+
+
+
+    .industry_content {
+        padding: 3rem;
+    }
+
+
+
+    .group-cont {
+        flex-direction: column;
+    }
+
+
+
+
+    .galery_container {
+        padding: 5rem 1rem;
+    }
+
+    .scroll-up {
+        right: 10px;
+    }
+
+    .scroll-up.show {
+        bottom: 10px;
+    }
+}

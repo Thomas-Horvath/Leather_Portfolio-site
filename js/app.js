@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".header");
+    const navbar = document.querySelector(".navbar");
     const scrollY = window.scrollY;
 
     if (scrollY > 80) {
@@ -125,4 +125,43 @@ window.addEventListener("scroll", () => {
 
     showScrollUpBtn();
 
+});
+
+/* hamburger menu */
+/* const hamburgerIcon = document.querySelector(".open-menu-btn");
+const menuOpen = document.querySelector(".container")
+const menuClose = document.querySelector(".header-button")
+
+function openMenu (){
+    hamburgerIcon.addEventListener('click' , () => {
+        menuOpen.style.display = "flex";
+menuClose.style.display = " none";
+    })
+}
+openMenu(); */
+/* ------------- */
+const menu = document.querySelector(".container");
+const openMenuBtn = document.querySelector(".open-menu-btn");
+const closeMenuBtn = document.querySelector(".close-menu-btn");
+const menuLinks = document.querySelectorAll(".menu-link"); /*minden linknek van egy ilyen osztélya */
+
+[openMenuBtn, closeMenuBtn].forEach((btn) => {
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("open"); /* ez hozzáadja aklasszt */
+        menu.style.transition = "transform 0.5s ease"; /* ez az átmenetettempóját szabájozza */
+    });
+});
+
+/* a memu-link osztályú elemeken végig megyünk és valamelyiknél van egy klikk esemény akkor amenuről levesszük a open klasszt.
+így ha amneüre kattintunk akkor összecsukódik a hamburger menü */
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("open"); // Az összecsukás a linkre kattintáskor történik
+    });
+});
+
+/* ezzel a transition átmenet végeztével mindig leveszi a style tulajdonságot.
+ez azért kell hogy ha keskenyítem az oldalt a töréspontnál(991px) ne ugráljun a menü!! */
+menu.addEventListener("transitionend", function () {
+    this.removeAttribute("style");
 });

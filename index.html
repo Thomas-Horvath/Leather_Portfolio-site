@@ -1,31 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Csaba Roland- Népi Bőrdíszműves</title>
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./assist/icons/icons8-leather-64.png" type="image/x-icon">
+
+    <!--  MAIN STELZSJHEET -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- MEDIA QUERYS -->
+    <link rel="stylesheet" href="./css/media-query.css">
+
+    <!--  REMIX ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- FONT-AWESOME ICON -->
     <script src="https://kit.fontawesome.com/156d16ec42.js" crossorigin="anonymous"></script>
+
+    <!-- EMAILJS - for email sending -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
-
-    <header class="header">
+    <!--  ======== NAVBAR SECTION ========== -->
+    <header class="navbar">
         <div class="container">
-
+            <button type="button" class="close-menu-btn"></button>
             <nav class="header-left">
-
-                <a href="#">Kezdőlap</a>
-                <a href="#about">Rólam</a>
-                <a href="#galery">Galéria</a>
-
+                <a class="menu-link" href="#">Kezdőlap</a>
+                <a class="menu-link" href="#about">Rólam</a>
+                <a class="menu-link" href="#galery">Galéria</a>
             </nav>
+
             <div class="logo">
                 <img src="./assist/img/pngfind.com-tree-of-life-png-377007.png" alt="">
                 <div class="title">
@@ -33,9 +47,9 @@
                     <span>Népi Bőrdíszműves</span>
                 </div>
             </div>
-            <nav class="header-right">
 
-                <a class="first" href="#products">Termékek</a>
+            <nav class="header-right">
+                <a class="first menu-link" href="#products">Termékek</a>
                 <div class="header_products-sublist">
                     <ul>
                         <li><a href="./bags.html">Bőrtáslák</a></li>
@@ -43,12 +57,13 @@
                         <li><a href="./wallets.html">Pénztárca</a></li>
                     </ul>
                 </div>
-                <a href="#industry">Bőrművesség</a>
-                <a href="#contact">Kapcsolat</a>
-
+                <a class="menu-link" href="#industry">Bőrművesség</a>
+                <a class="menu-link" href="#contact">Kapcsolat</a>
+                
             </nav>
 
         </div>
+        <!-- HAMBURGER MENU HEADER -->
         <div class="header-button">
             <div class="logo2">
                 <img src="./assist/img/pngfind.com-tree-of-life-png-377007.png" alt="">
@@ -57,6 +72,7 @@
                     <span>Népi Bőrdíszműves</span>
                 </div>
             </div>
+            <!-- HAMBURGER ICON -->
             <button type="button" class="open-menu-btn">
                 <span class="line line-1"></span>
                 <span class="line line-2"></span>
@@ -67,30 +83,31 @@
 
 
 
+
+    <!--  ======== HOME SECTION ========== -->
+
     <section class="home">
         <nav class="head_section">
             <div class="head-content">
-
-                <div class="head-text-content"><i class="ri-phone-line icon"></i><a href="tel"><span> +36/50 123 -
-                            4567</span> </a> </div>
-                <div class="head-text-content"><i class="ri-mail-line icon"></i><a href="mailto:#"><span>
-                            exemple@gmail.com</span></a></div>
-
+                <div class="head-text-content"><i class="ri-phone-line icon"></i><a href="tel">
+                        <span> +36/50 123 -4567</span> </a> </div>
+                <div class="head-text-content"><i class="ri-mail-line icon"></i><a href="mailto:#">
+                        <span>exemple@gmail.com</span></a></div>
 
                 <div class="social-icon"><a href="https://www.facebook.com" target="_blank"><i
                             class="ri-facebook-circle-fill icon-soc"></i></a></div>
                 <div class="social-icon"><a href="https://instagram.com" target="_blank"><i
                             class="ri-instagram-line icon-soc"></i></a></div>
-
-
             </div>
         </nav>
+
         <div class="home_content">
             <div class="home-left">
                 <h1>Üdvözöllek</h1>
                 <h3>Kézzel készített bőr termékek!</h3>
                 <p>Az összes alkotásomat egyedi elképzelések alapján, kézzel készítem el, a minta megtervezésétől
-                    kezdve, a bőr kiszabásán át, a varrásig. Minden egyes darabra kiemelt figyelmet fordítok, előfordul,
+                    kezdve, a bőr kiszabásán át, a varrásig. Minden egyes darabra kiemelt figyelmet fordítok,
+                    előfordul,
                     hogy egyszerre csak egyen dolgozom, míg az a legtökéletesebb nem lesz. </p>
                 <div class="btn-group">
                     <a href="#contact" class="btn home-btn">Egyedi elképzelés</a>
@@ -102,7 +119,11 @@
             </div>
         </div>
     </section>
-    </section>
+
+
+
+    <!--  ======== ABOUT SECTION ========== -->
+
     <section class="about" id="about">
 
         <div class="heading">Rólam</div>
@@ -114,7 +135,8 @@
             <p> Ettől kezdve folyamatosan tökéletesítettem
                 a
                 tudásomat: az általános iskola alatt tűzzománcot és ötvösséget tanultam Korcz Judittól és Fehér
-                Csabától; fafaragást Berta Józseftől és alkalmazott grafikát Bauer Istvántól. Innen egyenes út vezetett
+                Csabától; fafaragást Berta Józseftől és alkalmazott grafikát Bauer Istvántól. Innen egyenes út
+                vezetett
                 a Képző és Iparművészeti Szakközépiskola bőrműves és a dunaújvárosi Lórántffy Zsuzsanna Középiskola
                 bőrdíszműves szakára.</p>
             <p> Az Országos Szakma Kiváló Tanulója versenyen elért eredményem csak még inkább
@@ -123,45 +145,54 @@
             <p>
 
             <h2>Még néhány gondolat</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat quae incidunt nihil earum eum nam
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat quae incidunt nihil earum eum
+                nam
                 nesciunt doloremque ex modi vitae dicta distinctio, magni non voluptate expedita consectetur. Eius,
                 quos! Facilis hic ad ea et accusantium, magni pariatur rerum obcaecati, est quae illo aliquid modi
                 blanditiis repellat earum accusamus corporis? Officia ipsam dolorem, possimus illum cum delectus?
-                Consequuntur eligendi suscipit saepe est distinctio voluptate quo odio iure inventore blanditiis. Eius,
+                Consequuntur eligendi suscipit saepe est distinctio voluptate quo odio iure inventore blanditiis.
+                Eius,
                 asperiores itaque non obcaecati quidem beatae cupiditate accusamus dignissimos distinctio!</p>
         </div>
     </section>
 
 
-
+    <!--  ======== FOOTER SECTION ========== -->
 
     <section class="galery" id="galery">
+
         <div class="heading">Galéria</div>
-        <div class="galery_container">
+
+        <div class="galery_container"></div>
 
 
-        </div>
         <!-- A lightbox konténer -->
         <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-
             <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged Image">
             <i class="fa-regular fa-circle-xmark close-icon"></i>
         </div>
     </section>
+
+
+    <!--  ======== SIDE SECTION ========== -->
+
     <div class="side-wrapper">
         <div class="side">
-
-            <h1>VARÁZSOLJA EGYEDIVÉ MEGJELENÉSÉT EGY KÉZZEL KÉSZÍTETT BŐR KIEGÉSZÍTŐVEL! ÍRJA MEG NEKEM ELKÉPZELÉSÉT ÉS
+            <h1>VARÁZSOLJA EGYEDIVÉ MEGJELENÉSÉT EGY KÉZZEL KÉSZÍTETT BŐR KIEGÉSZÍTŐVEL! ÍRJA MEG NEKEM ELKÉPZELÉSÉT
+                ÉS
                 EGYÜTT MEGVALÓSÍTJUK AZT!</h1>
             <a href="#contact" class="btn">Szeretnék ajánlatot kérni</a>
         </div>
     </div>
 
-
+    <!--  ======== PRODUCT SECTION ========== -->
 
     <section class="products" id="products">
+
         <div class="heading">Termékek</div>
+
         <div class="product_container">
+
             <div class="product_content-box">
                 <h3>Tervezzük meg közösen álmaid táskáját!</h3>
                 <h1>BőrTáskák</h1>
@@ -180,6 +211,8 @@
                     <a class="btn product-btn" href="./bags.html">Tudj meg többet</a>
                 </div>
             </div>
+
+
             <div class="product_content-box">
                 <h3>Tervezzük meg közösen álmaid bőr övét!</h3>
                 <h1>Öv, Tarsoly, Övtáska</h1>
@@ -198,6 +231,8 @@
                     <a class="btn product-btn" href="./belt.html">Tudj meg többet</a>
                 </div>
             </div>
+
+
             <div class="product_content-box">
                 <h3>Tervezzük meg közösen álmaid pénztárcáját!</h3>
                 <h1>Bőr Pénztárcák</h1>
@@ -208,51 +243,66 @@
                     <ul>
                         <li><a href="">Női</a></li>
                         <li><a href="">Férfi</a></li>
-
                 </div>
                 <div class="product_btn-wraper">
                     <a class="btn product-btn" href="./wallets.html">Tudj meg többet</a>
                 </div>
             </div>
         </div>
-
     </section>
+
+
+    <!--  ======== INDUSTRY SECTION ========== -->
+
     <section class="industry" id="industry">
         <div class="heading">Bőrművesség</div>
         <div class="industry_content">
             <h3>A BŐRMŰVESSÉG A LEGŐSIBB SZAKMÁK EGYIKE.</h3>
-            <p>Az emberiség történelmében kezdettől fogva tetten érhető a bőr megmunkálása, hiszen elődeink az elejtett
-                állatok minden részét –így a bőrét is – hasznosították. Az anyag remek tulajdonságaiból adódóan szinte
+            <p>Az emberiség történelmében kezdettől fogva tetten érhető a bőr megmunkálása, hiszen elődeink az
+                elejtett
+                állatok minden részét –így a bőrét is – hasznosították. Az anyag remek tulajdonságaiból adódóan
+                szinte
                 nélkülözhetetlenné vált különböző használati tárgyak készítéséhez.
             <p>
-                A tartós, jól formálható, könnyen igényekhez alakítható bőr kiállta az idők próbáját. A mesterek változó
+                A tartós, jól formálható, könnyen igényekhez alakítható bőr kiállta az idők próbáját. A mesterek
+                változó
                 korokhoz igazodva a mindennapi élethez szükséges tárgyakat- öltözetet, lábbelit, tároló tömlőt, bőr
                 tarsolyt, lószerszámot, és más bőrből készült termékeket – készítettek belőlük.</p>
             <p>
-                Ahogy az idő előrehaladtával a minket körülvevő bőrtárgyak, úgy maga a szakma is változásokon esett át.
+                Ahogy az idő előrehaladtával a minket körülvevő bőrtárgyak, úgy maga a szakma is változásokon esett
+                át.
                 Míg régebben a bőr kikészítésétől, tartósításától, cserzésétől elkezdve minden folyamatot maguk a
                 bőrműves mesterek végeztek, idővel ezek önálló szakmákká, mesterségekké alakultak. Eleinte kis
-                tímár-cserző céh műhelyekben állították elő a megnövekedett igények kiszolgálására az alapanyagot. Ezt
-                követően indulhatott meg a nagyüzemi bőrgyártás. A paletta szélesedésével elváltak egymástól a bőrrel
+                tímár-cserző céh műhelyekben állították elő a megnövekedett igények kiszolgálására az alapanyagot.
+                Ezt
+                követően indulhatott meg a nagyüzemi bőrgyártás. A paletta szélesedésével elváltak egymástól a
+                bőrrel
                 foglalkozó, de egy-egy speciális terméket készítő szakmák is. Ilyen volt a csizmadia, szíjjártó,
                 lószerszámkészítő, nyerges vagy a bőrtárgy készítő.</p>
             <p>
                 Ahogy maga a bőrművesség a népi kultúrák szerves részévé vált, ugyanúgy merített is azokból. Az
-                elkészített használati tárgyakat a népi motívumkincset felhasználva gazdagon díszítik, amelyek ez által
+                elkészített használati tárgyakat a népi motívumkincset felhasználva gazdagon díszítik, amelyek ez
+                által
                 funkciójukon túl üzenetet is hordoznak.</p>
             <p>
                 A motívumoknak, jelképrendszereknek mondanivalójuk van, mely árulkodik viselője hitéről,
-                hovatartozásáról, személyiségéről. Leginkább a saját maguk által kiválasztott vagy az alkotóval közös
+                hovatartozásáról, személyiségéről. Leginkább a saját maguk által kiválasztott vagy az alkotóval
+                közös
                 tervezés után megszülető tárgyak adnak hiteles információt használójukról.</p>
             <p>
-                A bőrműves kézi munkát alkalmazva, valódi bőr alapanyag felhasználásával állítja elő egyedi alkotásait,
+                A bőrműves kézi munkát alkalmazva, valódi bőr alapanyag felhasználásával állítja elő egyedi
+                alkotásait,
                 egyéb természetes anyagokkal kiegészítve. Ebből adódóan az alkotás folyamata rendkívül időigényes –
-                különösen az egyedi, kis szériában előállítható termékek esetén-, ami tükröződik az eladási árban is. A
+                különösen az egyedi, kis szériában előállítható termékek esetén-, ami tükröződik az eladási árban
+                is. A
                 népi motívumok feldolgozásával nem a legfrissebb divatirányzatot követi, de a mai kor igényeit szem
                 előtt tartva készíti alkotásait.</p>
             </p>
         </div>
     </section>
+
+    <!--  ======== CONTACT SECTION ========== -->
+
     <section class="contact" id="contact">
         <div class="heading">kapcsolat</div>
         <div class="contact-content">
@@ -261,11 +311,15 @@
                     <h1>Irjon üzenetet!</h1>
                     <h2>Minta béla</h2>
                     <span>Népi Bőrdíszműves</span>
-                    <p>Ha szeretne kitűnni a tömegből egy egyedi, kézzel készített, minőségi bőrtáskával vagy ékszerrel,
-                        amellyel egyszerre ápolhatja a tradíciókat és lehet divatos, keressen meg most! Mondja el, mit
+                    <p>Ha szeretne kitűnni a tömegből egy egyedi, kézzel készített, minőségi bőrtáskával vagy
+                        ékszerrel,
+                        amellyel egyszerre ápolhatja a tradíciókat és lehet divatos, keressen meg most! Mondja el,
+                        mit
                         szeretne, és én megvalósítom. Küldjön nekem üzenetet az alábbi űrlap kitöltésével, és amint
-                        tehetem, írok Önnek, hogy megbeszélhessük a részleteket. Ha pedig még nem tudja pontosan, milyen
-                        terméket rendelne, tekintse meg kész munkáimat, és merítsen ihletet! Elég egy apró ötlet, egy
+                        tehetem, írok Önnek, hogy megbeszélhessük a részleteket. Ha pedig még nem tudja pontosan,
+                        milyen
+                        terméket rendelne, tekintse meg kész munkáimat, és merítsen ihletet! Elég egy apró ötlet,
+                        egy
                         irány, hogy új bőr kiegészítőjét akár együtt álmodhassuk meg.
                         <br><br>
                         Írjon vagy hívjon bizalommal!
@@ -330,6 +384,10 @@
             </div>
         </div>
     </section>
+
+
+    <!--  ======== FOOTER SECTION ========== -->
+
     <footer>
         <div class="footer_content">
             <div class="footer-group">
