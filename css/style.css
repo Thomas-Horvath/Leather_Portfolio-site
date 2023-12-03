@@ -325,7 +325,7 @@ section {
     width: 4rem
 }
 
-.title {
+.logo .title {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -333,6 +333,7 @@ section {
     text-align: center;
     overflow: hidden;
     width: 100%;
+    color: var(--bg)
 }
 
 

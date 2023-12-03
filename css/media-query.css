@@ -279,6 +279,7 @@
 
     .navbar .logo2 .title {
         width: auto;
+        color: var(--bg);
     }
 
     .navbar .logo2 img {
