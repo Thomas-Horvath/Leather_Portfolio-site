@@ -40,7 +40,7 @@ function createImageElements() {
     
     if (currentPage === 'bags.html') {
         for (let i = 1; i <= 3; i++) {
-            var imgSrc = `../assist/products/${categories[0]}/${i}.jpg`;
+            var imgSrc = `./assist/products/${categories[0]}/${i}.jpg`;
             
             const titleArray = ["Elegáns férfi táska", "Alkalmi utazó táska", "Utazó táska"]
           
@@ -65,7 +65,7 @@ function createImageElements() {
         }
     } else if (currentPage === 'belt.html') {
         for (let i = 1; i <= 6; i++) {
-            var imgSrc = `../assist/products/${categories[1]}/${i}.jpg`;
+            var imgSrc = `./assist/products/${categories[1]}/${i}.jpg`;
 
             const titleArray = ["Bőr öv"," Barna férfi öv", "Bármi lehet", "Fehér öv", "Unisex övek", "Egyedi termékek"] 
 
@@ -90,7 +90,7 @@ function createImageElements() {
 
     } else if (currentPage === 'wallets.html') {
         for (let i = 1; i <= 7; i++) {
-            var imgSrc = `../assist/products/${categories[2]}/${i}.jpg`;
+            var imgSrc = `./assist/products/${categories[2]}/${i}.jpg`;
 
             let titleArray  =[ "Régimódi", "piros női", "Elegáns", "modern", "Régi stílusú", "Modern" , "Egyedi termékek" ]
 
