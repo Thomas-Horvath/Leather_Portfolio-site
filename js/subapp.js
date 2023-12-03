@@ -27,16 +27,6 @@ const currentURL = window.location.href;
 // Aktuális oldal nevének lekérése
 const currentPage = window.location.pathname.split('/').pop();
 
-// Ellenőrzés, hogy melyik oldalon vagy
-if (currentPage === 'bags.html') {
-    var page = "bags";
-} else if (currentPage === 'belt.html') {
-    console.log('belts');
-} else {
-    console.log('Az aktuális oldal egyéb oldal');
-}
-
-console.log(page)
 
 
 
@@ -47,11 +37,13 @@ console.log(page)
 function createImageElements() {
     const galleryContainer = document.querySelector('.sub_product_container');
     const categories = ['bags', 'belts', 'wallets', 'other'];
+    
     if (currentPage === 'bags.html') {
         for (let i = 1; i <= 3; i++) {
             var imgSrc = `../assist/products/${categories[0]}/${i}.jpg`;
-
-            let title = "Táskák"
+            
+            const titleArray = ["Elegáns férfi táska", "Alkalmi utazó táska", "Utazó táska"]
+          
 
             // Létrehozunk egy új sub_product_content-box-t minden képhez
             const galleryContentBox = document.createElement('div');
@@ -60,7 +52,7 @@ function createImageElements() {
             // A tartalom rész
             const content = `
             <div class="product_header-wrapper">
-                <h3>${title}</h3>
+                <h3>${titleArray[i - 1]}</h3>
             </div>
             <img src="${imgSrc}" alt="Product ${i}">
         `;
@@ -75,7 +67,7 @@ function createImageElements() {
         for (let i = 1; i <= 6; i++) {
             var imgSrc = `../assist/products/${categories[1]}/${i}.jpg`;
 
-            let title = "Övek"
+            const titleArray = ["Bőr öv"," Barna férfi öv", "Bármi lehet", "Fehér öv", "Unisex övek", "Egyedi termékek"] 
 
             // Létrehozunk egy új sub_product_content-box-t minden képhez
             const galleryContentBox = document.createElement('div');
@@ -84,7 +76,7 @@ function createImageElements() {
             // A tartalom rész
             const content = `
             <div class="product_header-wrapper">
-                <h3>${title}</h3>
+                <h3>${titleArray[i - 1]}</h3>
             </div>
             <img src="${imgSrc}" alt="Product ${i}">
         `;
@@ -100,7 +92,7 @@ function createImageElements() {
         for (let i = 1; i <= 7; i++) {
             var imgSrc = `../assist/products/${categories[2]}/${i}.jpg`;
 
-            let title = "Pénztárcák"
+            let titleArray  =[ "Régimódi", "piros női", "Elegáns", "modern", "Régi stílusú", "Modern" , "Egyedi termékek" ]
 
             // Létrehozunk egy új sub_product_content-box-t minden képhez
             const galleryContentBox = document.createElement('div');
@@ -109,7 +101,7 @@ function createImageElements() {
             // A tartalom rész
             const content = `
             <div class="product_header-wrapper">
-                <h3>${title}</h3>
+                <h3>${titleArray[i - 1]}</h3>
             </div>
             <img src="${imgSrc}" alt="Product ${i}">
         `;
