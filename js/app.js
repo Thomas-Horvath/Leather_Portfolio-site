@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 function createImageElements() {
     const galleryContainer = document.querySelector('.galery_container');
 
-    for (let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 21; i++) {
         const imgSrc = `./assist/products/${i}.jpg`; // Assuming the images are named image1.jpg, image2.jpg, ..., image20.jpg
         const galleryContentBox = document.createElement('div');
         galleryContentBox.classList.add('galery_content-box');
