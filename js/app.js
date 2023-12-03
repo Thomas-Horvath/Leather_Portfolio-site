@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
 
     if (scrollY > 80) {
         navbar.classList.add("scrolled");
-       
+
     } else {
         navbar.classList.remove("scrolled");
     }
@@ -12,12 +12,38 @@ window.addEventListener("scroll", function () {
 
 
 /* ---------------- */
-// Function to create image elements and insert them into gallery content boxes
+/* // Function to create image elements and insert them into gallery content boxes
 function createImageElements() {
     const galleryContainer = document.querySelector('.galery_container');
 
-    for (let i = 1; i <= 21; i++) {
-        const imgSrc = `./assist/products/${i}.jpg`; // Assuming the images are named image1.jpg, image2.jpg, ..., image20.jpg
+    for (let i = 1; i <= 5; i++) {
+        const imgSrc = `./assist/products/belts/${i}.jpg`; 
+        const galleryContentBox = document.createElement('div');
+        galleryContentBox.classList.add('galery_content-box');
+
+        const imgElement = document.createElement('img');
+        imgElement.src = imgSrc;
+        imgElement.alt = `Product ${i}`;
+
+        galleryContentBox.appendChild(imgElement);
+        galleryContainer.appendChild(galleryContentBox);
+    }
+
+
+    for (let i = 1; i <= 4; i++) {
+        const imgSrc = `./assist/products/bags/${i}.jpg`;
+        const galleryContentBox = document.createElement('div');
+        galleryContentBox.classList.add('galery_content-box');
+
+        const imgElement = document.createElement('img');
+        imgElement.src = imgSrc;
+        imgElement.alt = `Product ${i}`;
+
+        galleryContentBox.appendChild(imgElement);
+        galleryContainer.appendChild(galleryContentBox);
+    }
+    for (let i = 1; i <= 7; i++) {
+        const imgSrc = `./assist/products/wallets/${i}.jpg`; 
         const galleryContentBox = document.createElement('div');
         galleryContentBox.classList.add('galery_content-box');
 
@@ -31,7 +57,78 @@ function createImageElements() {
 }
 
 // Call the function to create and insert image elements
+createImageElements(); */
+
+
+
+/* function createImageElements() {
+    const galleryContainer = document.querySelector('.galery_container');
+    const categories = { 'belts': 5, 'bags': 4, 'wallets': 7 };
+
+
+    for (let i = 1; i <= categories.value; i++) {
+        const imgSrc = `./assist/products/${categories.key}/${i}.jpg`;
+        const galleryContentBox = document.createElement('div');
+        galleryContentBox.classList.add('galery_content-box');
+
+
+        const content = `
+                    <div class="product_header-wrapper">
+                        <h3>Tervezzük meg közösen álmaid táskáját!</h3>
+                    </div>
+                    <img src="${imgSrc}" alt="Product">
+                `;
+
+        galleryContentBox.innerHTML = content;
+
+
+        galleryContainer.appendChild(galleryContentBox);
+    }
+}
 createImageElements();
+ */
+
+function createImageElements() {
+    const galleryContainer = document.querySelector('.galery_container');
+    const categories = { 'belts': 6, 'bags': 3, 'wallets': 7 ,'others': 5};
+
+    for (const category in categories) {
+        if (categories.hasOwnProperty(category)) {
+            const imageCount = categories[category];
+            console.log(category, imageCount);
+
+            for (let i = 1; i <= imageCount; i++) {
+                const imgSrc = `./assist/products/${category}/${i}.jpg`;
+                const galleryContentBox = document.createElement('div');
+                galleryContentBox.classList.add('galery_content-box');
+
+                const content = `
+                    
+                    <img src="${imgSrc}" alt="Product ${imgSrc}">
+                `;
+
+                galleryContentBox.innerHTML = content;
+                galleryContainer.appendChild(galleryContentBox);
+            }
+        }
+    }
+}
+
+createImageElements();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------ */
@@ -46,8 +143,10 @@ images.forEach((image, index) => {
 });
 
 // Lightbox megnyitása
+
 function openLightbox(imageIndex) {
-    const imgSrc = `./assist/products/${imageIndex}.jpg`; // Az aktuális kép elérési útja
+  
+    const imgSrc = `./assist/products/${imageIndex}.jpg`; 
     lightboxImg.src = imgSrc;
     lightbox.style.display = 'flex'; // vagy 'block', ahogy az stílusodnak megfelel
     lightbox.style.visibility = "visible";

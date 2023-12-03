@@ -1,10 +1,4 @@
 @media screen and (max-width: 1400px) {
-
-
-
-
-
-
     .title {
         margin-left: 1rem;
         width: 280px;
@@ -12,7 +6,6 @@
 
     .navbar {
         top: 0;
-
     }
 
     .header-left a,
@@ -40,7 +33,6 @@
 
     .form__group {
         width: 100%;
-
     }
 
     .contact-content {
@@ -117,7 +109,6 @@
         width: 280px;
     }
 
-
     .header-left a,
     .header-right a {
         font-size: 1.1rem;
@@ -153,15 +144,12 @@
         right: 0;
         top: 0;
         width: 100%;
-
         background-color: var(--red);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
-
         z-index: 1;
-
         transform: translate(100%);
         padding-top: 50px;
         max-height: 100vh;
@@ -176,13 +164,8 @@
         padding-top: 20px;
     }
 
-
-
-
-
     /*  sublist display */
     .header_products-sublist {
-
         display: block;
         position: static;
         background-color: transparent;
@@ -207,12 +190,9 @@
         width: 100%;
     }
 
-
-
     .header_products-sublist li {
         border-bottom: 1px solid var(--text-gold);
         width: 70%;
-
     }
 
     .header_products-sublist li a {
@@ -220,8 +200,6 @@
         font-size: 1.4rem;
         font-weight: 600;
     }
-
-
 
     .header-left a:hover,
     .header-right a:hover {
@@ -265,25 +243,19 @@
 
     }
 
-
-
-
     /*  CLOSED HAMBURGER MENU - HEADER*/
     .navbar .header-button {
         display: flex;
         margin: 0 2rem;
         justify-content: space-between;
         align-items: center;
-
     }
-
 
     .navbar .logo2 {
         display: flex;
         margin: 1rem;
         justify-content: center;
         align-items: center;
-
     }
 
     .home_content {
@@ -322,8 +294,6 @@
         font-size: 1.8rem;
     }
 
-
-
     /* HAMBURGER MENU ICON */
     .header-button .open-menu-btn {
         display: inline-flex;
@@ -360,14 +330,6 @@
         transform: translateY(8px);
     }
 
-
-
-
-
-
-
-
-
     /* HOME */
     .home_content {
         flex-direction: column-reverse;
@@ -393,19 +355,10 @@
         justify-content: center;
     }
 
-
-
-
-
-
-
     /*  GALERY */
     .galery_container {
         padding: 5rem 1rem;
     }
-
-
-
 
     /*  PRODUCT */
     .product_content-box {
@@ -420,7 +373,6 @@
         font-size: 1rem;
     }
 
-
     /*  FOOTER */
     .footer-group {
         flex-wrap: wrap;
@@ -430,10 +382,6 @@
     footer {
         height: auto;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 780px) {
@@ -472,8 +420,6 @@
         text-align: center;
     }
 
-
-
     .galery_content-box {
         width: 250px;
         height: 250px;
@@ -493,7 +439,6 @@
         width: 200px;
         height: 200px;
     }
-
 }
 
 @media screen and (max-width:610px) {
@@ -586,17 +531,13 @@
         width: 100%;
     }
 
-
-
     .home-right {
-      
         width: 100%;
         padding: 0;
     }
 
     .home-right img {
         max-width: 100%;
-        padding-top: 10px;
         width: 100%;
         margin: 0;
         border: 0px;
@@ -607,13 +548,10 @@
         padding-top: 5rem;
     }
 
-
-
     .home-left {
         padding: 0 2rem;
         text-align: center;
         margin-top: 0;
-
     }
 
     .btn-group {
@@ -670,8 +608,6 @@
         padding: 3rem;
     }
 
-
-
     .group-cont {
         flex-direction: column;
     }
@@ -688,16 +624,12 @@
         border-top: 2px solid var(--red);
         border-right: 0px;
         border-left: 0px;
-        background-color: var(--box-bg);
         border-radius: 0px;
     }
 
     .contact-right {
         padding: 2rem 0;
     }
-
-
-
 
     .group {
         justify-content: start;

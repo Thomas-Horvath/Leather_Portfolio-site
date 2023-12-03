@@ -15,30 +15,141 @@ function showScrollUpBtn() {
 scrollUpBtn.addEventListener("click", () => window.scrollTo({ behavior: "smooth", top: 0, left: 0 }))
 
 window.addEventListener("scroll", () => {
-   
+
     showScrollUpBtn();
-   
+
 });
+
+
+// Teljes URL lekérése
+const currentURL = window.location.href;
+
+// Aktuális oldal nevének lekérése
+const currentPage = window.location.pathname.split('/').pop();
+
+// Ellenőrzés, hogy melyik oldalon vagy
+if (currentPage === 'bags.html') {
+    var page = "bags";
+} else if (currentPage === 'belt.html') {
+    console.log('belts');
+} else {
+    console.log('Az aktuális oldal egyéb oldal');
+}
+
+console.log(page)
+
+
+
+
+
 
 /* ----------- */
 function createImageElements() {
-    const galleryContainer = document.querySelector('.product_container');
+    const galleryContainer = document.querySelector('.sub_product_container');
+    const categories = ['bags', 'belts', 'wallets', 'other'];
+    if (currentPage === 'bags.html') {
+        for (let i = 1; i <= 3; i++) {
+            var imgSrc = `../assist/products/${categories[0]}/${i}.jpg`;
 
-    for (let i = 1; i <= 20; i++) {
-        const imgSrc = `./assist/products/${i}.jpg`; // Assuming the images are named image1.jpg, image2.jpg, ..., image20.jpg
-        const galleryContentBox = document.createElement('div');
-        galleryContentBox.classList.add('sub_product_content-box');
+            let title = "Táskák"
 
-        const imgElement = document.createElement('img');
-        imgElement.src = imgSrc;
-        imgElement.alt = `Product ${i}`;
+            // Létrehozunk egy új sub_product_content-box-t minden képhez
+            const galleryContentBox = document.createElement('div');
+            galleryContentBox.classList.add('sub_product_content-box');
 
-        galleryContentBox.appendChild(imgElement);
-        galleryContainer.appendChild(galleryContentBox);
+            // A tartalom rész
+            const content = `
+            <div class="product_header-wrapper">
+                <h3>${title}</h3>
+            </div>
+            <img src="${imgSrc}" alt="Product ${i}">
+        `;
+
+            // A tartalom hozzáadása a content-box-hoz
+            galleryContentBox.innerHTML = content;
+
+            // A content-box hozzáadása a konténerhez
+            galleryContainer.appendChild(galleryContentBox);
+        }
+    } else if (currentPage === 'belt.html') {
+        for (let i = 1; i <= 6; i++) {
+            var imgSrc = `../assist/products/${categories[1]}/${i}.jpg`;
+
+            let title = "Övek"
+
+            // Létrehozunk egy új sub_product_content-box-t minden képhez
+            const galleryContentBox = document.createElement('div');
+            galleryContentBox.classList.add('sub_product_content-box');
+
+            // A tartalom rész
+            const content = `
+            <div class="product_header-wrapper">
+                <h3>${title}</h3>
+            </div>
+            <img src="${imgSrc}" alt="Product ${i}">
+        `;
+
+            // A tartalom hozzáadása a content-box-hoz
+            galleryContentBox.innerHTML = content;
+
+            // A content-box hozzáadása a konténerhez
+            galleryContainer.appendChild(galleryContentBox);
+        }
+
+    } else if (currentPage === 'wallets.html') {
+        for (let i = 1; i <= 7; i++) {
+            var imgSrc = `../assist/products/${categories[2]}/${i}.jpg`;
+
+            let title = "Pénztárcák"
+
+            // Létrehozunk egy új sub_product_content-box-t minden képhez
+            const galleryContentBox = document.createElement('div');
+            galleryContentBox.classList.add('sub_product_content-box');
+
+            // A tartalom rész
+            const content = `
+            <div class="product_header-wrapper">
+                <h3>${title}</h3>
+            </div>
+            <img src="${imgSrc}" alt="Product ${i}">
+        `;
+
+            // A tartalom hozzáadása a content-box-hoz
+            galleryContentBox.innerHTML = content;
+
+            // A content-box hozzáadása a konténerhez
+            galleryContainer.appendChild(galleryContentBox);
+        }
     }
+
 }
 
 createImageElements();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------- */
 const menu = document.querySelector(".container");
