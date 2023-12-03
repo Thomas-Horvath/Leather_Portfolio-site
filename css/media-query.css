@@ -546,8 +546,11 @@
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-    .group-title h2 {
+    .group-title h2, .group-title span {
         margin-top: 0;
+        text-align: center;
+        width: 100%;
+        display: block;
     }
 
     .contact-left {
