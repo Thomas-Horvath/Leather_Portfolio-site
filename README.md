@@ -1,7 +1,6 @@
 # Hungarian Leateher Decorator - Portfolio Website 
 
-## Website link:
-<a href="https://thomas-horvath.github.io/Leather_Portfolio-site/" target="_blank">Leather-Decorator</a>
+## Website link: [Leather-Decorator](https://thomas-horvath.github.io/Leather_Portfolio-site/)
 
 
 ### Preview: 
